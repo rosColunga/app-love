@@ -1,0 +1,249 @@
+/*CLASES REUTILIZABLES*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Estableciendo estilo visible general*/
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*Estructura del contenedor de nav*/
+.container {
+  position: fixed;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: 100px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/*Estructura contenedora general*/
+.cont{
+  position: relative;
+  top: 98px;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container:after {
+  clear: both;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.cont{
+  position: relative;
+  top: 98px;
+}
+
+/*Estilo de vínculos*/
+a {
+  color: #373B47;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover, .button #link-button:hover {
+  color: #E95853;
+}
+
+/*Conversión a mayúculas*/
+p.special, h5, .text-uppercase {
+  text-transform: uppercase;
+}
+
+/*Barra de navegación*/
+nav {
+  background: #FFFFFF;
+  color: #373B47;
+  font-weight: bolder;
+}
+
+/*Contenedor de sección header en body*/
+.full-header {
+  z-index: 1;
+  width: 1366px;
+  height: 98px;
+  position: fixed;
+  top: 0;
+}
+
+/*Menú en lista*/
+ul {
+  list-style: none;
+  padding: 25px;
+  margin: 10px;
+}
+ul li {
+  width: 125px;
+  display: inline-block;
+
+}
+
+.logo {
+  float:right;
+  width: 63px;
+  height: 63px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Estilo de "primera vista /sección"*/
+section.first-display {
+  width: 1367px;
+  height: 579px;
+  background-image: url("https://fotos.subefotos.com/95f30bd8768ea79dda0989bf017c8e1bo.jpg");
+  background-repeat: no-repeat;
+  background-size: 1367px 579px;
+  text-align: center;
+  margin: 0;
+  padding: 60px;
+  display: block;
+}
+.first-display >.home-text{
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4.work {
+  color: gray;
+  font-weight: bolder;
+}
+
+.small-height {
+  line-height: 10px;
+}
+
+.button #link-button {
+  background: #2ECC71;
+  color: #fff;
+  position: relative;
+  left: 44%;
+  top: 75px;
+  width: 150px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+/*Estilo de "segunda vista /sección"*/
+section.red-section {
+  position: relative;
+  color: #fff;
+  background-color: #F17C72;
+  width: 1367px;
+  height: 700px;
+  text-align: center;
+  margin: 0px;
+  padding: 40px;
+  display: block;
+}
+
+
+.red-section .circle-left #circle-img,
+.red-section .circle-right #circle-img{
+  width: 200px;
+  height: 200px;
+}
+
+.circle-left{
+  width: 33.3%;
+  float:left;
+  line-height: 0px;
+}
+
+.circle-right {
+  width: 33.3%;
+  float: right;
+  line-height: 0px;
+}
+
+.circle-cells-container{
+  padding: 45px;
+  margin-top: 25px;
+}
+
+/*Estilo de "Última vista /sección"*/
+section.long-display {
+  background: #fff;
+  background-size: 1367px 2312px;
+  width: 1367px;
+  height: 2312px;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+  display: block;
+}
+
+.long-display #biggie {
+  width: 880px;
+  height: 910px;
+  margin-top: 40px;
+}
+
+footer {
+  background: #373B47;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  display: block;
+
+}
+
+.projects img {
+  width: 302px;
+  height: 251px;
+}
+
+/*Estilo de galería de proyectos*/
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 25px;
+  margin-top: 22px;
+  margin-left: 6px;
+  text-align: center;
+}
